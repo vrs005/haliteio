@@ -5,7 +5,6 @@ public class MyBot {
 	
 	public static Direction findNearestEnemyDirection(int myID,GameMap gameMap,Location curr_loc){
 		Direction direction = Direction.NORTH;
-	    // don't get stuck in an infinite loop
 	    int maxDistance = Math.min(gameMap.width, gameMap.height) / 2;
 
 	    for(Direction d : Direction.CARDINALS) {
